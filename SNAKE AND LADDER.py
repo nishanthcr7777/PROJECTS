@@ -1,3 +1,10 @@
+#This project Snake and ladder is developed using python
+#with an aim to recreate the classical board game snakes
+#and ladders which is an ancient Indian board game that's
+#regarded today as a worldwide classic.
+#T IS MADE WITH THE HELP OF FOLLOWING PYTHON MODULES:
+#1. Tkinter,2. PIL,3. Random,4. OS
+
 import tkinter as tk
 from PIL import Image, ImageTk
 import random
