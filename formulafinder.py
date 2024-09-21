@@ -1,3 +1,10 @@
+#The menu driven program is designed using python such
+#that it contains 3 subjects maths, physics and chemistry
+#and a exit option, where each of the subjects contains
+#name of the chapters concepts and each of the
+#chapters/concepts contains the formulas associated with
+#them
+
 
 from PIL import Image, ImageTk
 
