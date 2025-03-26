@@ -2,7 +2,7 @@
 #with an aim to recreate the classical board game snakes
 #and ladders which is an ancient Indian board game that's
 #regarded today as a worldwide classic.
-#T IS MADE WITH THE HELP OF FOLLOWING PYTHON MODULES:
+#IT IS MADE WITH THE HELP OF FOLLOWING PYTHON MODULES:
 #1. Tkinter,2. PIL,3. Random,4. OS
 
 import tkinter as tk
@@ -10,9 +10,6 @@ from PIL import Image, ImageTk
 import random
 import os
 
-
-
-    
 
 def start_game():
     global im
@@ -69,6 +66,10 @@ def check_ladder(Turn):
             f=1
     else:
         if pos2 in ladder:
+
+
+ 
+
             pos2=ladder[pos2]
             f=1
     return f
@@ -96,6 +97,7 @@ def roll_dices():
     b.place(x=850,y=450)
 
    # speak(str(r))
+
 
 
     lad=0
@@ -196,9 +198,10 @@ lab.place(x=0,y=0)
 
 #p1 button
 b1=tk.Button(root,text="PLAYER-1",height=3,width=20,fg='blue',bg='cyan',font=('cursive',14,'bold'),activebackground='yellow',command=roll_dices)
+
 #p2 button
 b2=tk.Button(root,text="PLAYER-2",height=3,width=20,fg='red',bg='cyan',font=('cursive',14,'bold'),activebackground='yellow',command=roll_dices)
-
+root.bind('<Return>',lambda command:roll_dices())
 
 #coin 1
 p1=tk.Canvas(root,width=40,height=40)
@@ -206,6 +209,7 @@ p1.create_oval(10,10,40,40,fill='blue')
  
 
 #coin 2
+
 p2=tk.Canvas(root,width=40,height=40)
 p2.create_oval(10,10,40,40,fill='red')
  
@@ -220,3 +224,4 @@ start_game()
 
 
 root.mainloop()
+
